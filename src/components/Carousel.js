@@ -11,13 +11,13 @@ export default function FullCarousel() {
       interval={4000}
       className="w-full h-[90vh]">
       <div>
-        <img src="/carousel1.webp" className="object-cover w-full h-[90vh]" />
+        <img src="/carousel1.jpg" className="object-cover w-full h-[90vh]" />
       </div>
       <div>
         <img src="/carousel2.jpg" className="object-cover w-full h-[90vh]" />
       </div>
       <div>
-        <img src="/carousel1.webp" className="object-cover w-full h-[90vh]" />
+        <img src="/carousel3.jpg" className="object-cover w-full h-[90vh]" />
       </div>
     </Carousel>
   )

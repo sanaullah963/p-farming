@@ -20,7 +20,7 @@ export default function FarmingGuides() {
   ]
 
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-green-700 mb-4">Farming Guides</h2>
         <p className="text-gray-700 mb-10 max-w-2xl">
@@ -31,26 +31,31 @@ export default function FarmingGuides() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {guides.map((guide, idx) => (
             <div
-            key={idx}
-            className="bg-gtay-200 shadow-md rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            <div className="aspect-video">
-              <iframe
-                src={guide.videoUrl}
-                title={guide.title}
-                allowFullScreen
-                className="w-full h-full"
-              />
+              key={idx}
+              className="bg-gtay-200 shadow-md rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div className="aspect-video">
+                <iframe
+                  src={guide.videoUrl}
+                  title={guide.title}
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-green-800">{guide.title}</h3>
+                <p className="text-gray-600 text-sm my-2">{guide.description}</p>
+                <a
+                  href={guide.videoUrl.replace("/embed/", "/watch?v=")} // Convert embed to watch format
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800"
+                >
+                  Watch Now
+                </a>
+              </div>
             </div>
-            <div className="p-4">
-              <h3 className="text-xl font-semibold text-green-800">{guide.title}</h3>
-              <p className="text-gray-600 text-sm my-2">{guide.description}</p>
-              <button className="cursor-pointer mt-2 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800">
-                Watch Now
-              </button>
-            </div>
-          </div>
-          
+
           ))}
         </div>
       </div>

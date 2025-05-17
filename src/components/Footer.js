@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
         {/* Left */}
         <div>
-          <h2 className="text-2xl font-bold mb-2">🌾 Sorvewa</h2>
+          <h2 className="text-2xl font-bold mb-2">🌾 AG-Hub</h2>
           <p className="text-sm">
             Your trusted hub for agricultural knowledge. Helping farmers thrive with accurate and practical information.
           </p>
@@ -27,7 +27,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-sm mt-8 border-t border-white/30 pt-4">
-        &copy; {new Date().getFullYear()} Sorvewa. All rights reserved.
+        &copy; {new Date().getFullYear()} AG-Hub. All rights reserved.
       </div>
     </footer>
   )

@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="bg-green-700 text-white px-4 py-3">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         <Link href="/" className="flex items-center gap-2">
-        <h1 className="text-xl font-bold cursor-pointer">🌿 Sorvewa</h1>
+        <h1 className="text-xl font-bold cursor-pointer">🌿 AG-Hub</h1>
         </Link>
         <div className="hidden md:flex space-x-6">
           {links.map(link => (
